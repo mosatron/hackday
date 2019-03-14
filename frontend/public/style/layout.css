@@ -1,7 +1,7 @@
 
 #myname {
   font-size: 4vw;
- margin:0;
+  margin:0;
   padding: 0;
 }
 
@@ -19,6 +19,11 @@
 }
 
 #imgDiv {
+  margin-top: 10px;
   grid-column: 2;
   grid-row: 3;
+  display: flex; 
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+ 
 }

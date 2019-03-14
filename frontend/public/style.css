@@ -14,38 +14,23 @@ body {
   grid-template-rows: 5vh 10vh 85vh;
   margin:0;
   padding: 0;
+
   
 }
 header {
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 0.5px;
   grid-column: 2;
   grid-row: 2;
   display: flex;
   justify-content: space-between;
-  border-bottom-style: solid;
-  border-bottom-color: black;
-  border-bottom-width: 0.5px;
+  flex-flow: wrap;
 }
 
-
+img {
+    size: 10%;
+    margin: 5px;
+  /* max-width: 200px; */
   
-
-
-
-.pics{
-  max-width: 200px;
-  max-height: 200px;
-}
-
-img {
-  size: 50%;
-}
-
-
-nav {
-  color: green;
-}
-
-
-img {
-  margin: 5px;
 }
