@@ -10,14 +10,20 @@ button.addEventListener('click', () => {
       imgDiv.className = "pics";  
  
 
-  fetch('http://localhost:3000/')
+    getImages()
     .then(res => res.url)
     .then(url => {
       img.setAttribute('src', url);
-      console.log(img);
+      img.setAttribute('width', 200);
       imgDiv.appendChild(img);
       document.body.appendChild(imgDiv);
     });
 });
 
+}
+
+
+const getImages = () => {
+  const id = '1'
+  return fetch(`http://localhost:3000/${id}`)
 }

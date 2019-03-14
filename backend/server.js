@@ -8,10 +8,11 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'db')));
 
-app.get('/', (req, res) => {
- 
- res.sendFile(__dirname + '/db/' + '01.jpg');
+app.get('/:id', (req, res) => {
+  const id = req.params.id;
+  res.sendFile(__dirname + `/db/${id}.jpg`);
 })
+ 
 
 app.listen(PORT, ()=> console.log(`server is listening to port ${PORT}`));
 
