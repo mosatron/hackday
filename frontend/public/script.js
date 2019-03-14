@@ -2,28 +2,33 @@
 
 window.onload = () => {
 
-const button = document.getElementById('request');
-button.addEventListener('click', () => {
-    
-  let img = document.createElement('img');
+  const button = document.getElementById('request');
+        button.addEventListener('click', () => {
+  
+  getImages()
+    .then(div => document.body.appendChild(div) )
+      });
+
+  };
+
+
+
+
+const getImages = async () => {
+  const id = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
   let imgDiv = document.createElement('div');
-      imgDiv.className = "pics";  
- 
-
-    getImages()
-    .then(res => res.url)
-    .then(url => {
-      img.setAttribute('src', url);
-      img.setAttribute('width', 200);
-      imgDiv.appendChild(img);
-      document.body.appendChild(imgDiv);
-    });
-});
-
-}
-
-
-const getImages = () => {
-  const id = '1'
-  return fetch(`http://localhost:3000/${id}`)
+  
+  for(let i = 0; i < id.length; i++){
+    let img = document.createElement('img');
+        imgDiv.className = "pics"; 
+    const res = await fetch(`http://localhost:3000/${id[i]}`);
+    const url = res.url;
+    img.setAttribute('src', url);
+    img.setAttribute('width', 200);
+    imgDiv.appendChild(img);
+  
+  }
+  
+  return imgDiv;
+  
 }
