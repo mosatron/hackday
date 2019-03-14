@@ -1,5 +1,37 @@
-.pics{
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+@import './style/layout.css';
+html{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 100%;
+  margin:0;
+  padding: 0;
+  width: 100vw;
+}
 
+body {
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-template-rows: 5vh 10vh 85vh;
+  margin:0;
+  padding: 0;
+  
+}
+header {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 0.5px;
+}
+
+
+  
+
+
+
+.pics{
   max-width: 200px;
   max-height: 200px;
 }
@@ -8,6 +40,12 @@ img {
   size: 50%;
 }
 
-body {
-  background-color: red;
+
+nav {
+  color: green;
+}
+
+
+img {
+  margin: 5px;
 }

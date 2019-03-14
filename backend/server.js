@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, 'db')));
 
 app.get('/:id', (req, res) => {
   const id = req.params.id;
-  res.sendFile(__dirname + `/db/${id}.jpg`);
+  res.sendFile(__dirname + `/db/thumbnails/${id}_tn.jpg`);
 })
  
 

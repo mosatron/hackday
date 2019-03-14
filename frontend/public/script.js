@@ -1,12 +1,13 @@
 
 
 window.onload = () => {
-
-  const button = document.getElementById('request');
+  const imgDiv = document.getElementById('imgDiv')
+        
+  const button = document.getElementById('imagebutton');
         button.addEventListener('click', () => {
   
   getImages()
-    .then(div => document.body.appendChild(div) )
+    .then(div => imgDiv.appendChild(div) )
       });
 
   };

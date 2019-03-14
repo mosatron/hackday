@@ -1,0 +1,24 @@
+
+#myname {
+  font-size: 4vw;
+ margin:0;
+  padding: 0;
+}
+
+#imagebutton {
+  padding-top: 2%;
+  font-size: 2.5vw;
+  margin:0;
+}
+
+#about{
+  padding-top: 2%;
+  font-size: 2.5vw;
+  margin:0;
+  padding-bottom: 5px;
+}
+
+#imgDiv {
+  grid-column: 2;
+  grid-row: 3;
+}
