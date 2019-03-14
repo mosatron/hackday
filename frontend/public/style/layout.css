@@ -18,12 +18,11 @@
   padding-bottom: 5px;
 }
 
-#imgDiv {
+#thumbDiv {
   margin-top: 10px;
   grid-column: 2;
   grid-row: 3;
   display: flex; 
   flex-flow: row wrap;
   justify-content: space-evenly;
- 
 }
