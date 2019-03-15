@@ -24,9 +24,6 @@ window.onload = () => {
   });
 }
 
-
-  
-
 const getImages = async () => {
       thumbDiv.style.display = 'none';
       thumbDiv.className = "pics"; 
@@ -42,7 +39,6 @@ const getImages = async () => {
   return;
 }
     
-
 const getRealImages = async () => {
   let imgDiv = document.getElementById('imgDiv');
      
