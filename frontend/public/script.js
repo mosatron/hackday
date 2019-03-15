@@ -11,7 +11,7 @@ window.onload = () => {
     button.textContent = 'Hide Images';
         
     if(thumbDiv.style.display === 'none'){
-      thumbDiv.style.display = 'block';
+      thumbDiv.style.display = 'flex';
       button.textContent = 'Hide Images';
       return;
   }  
@@ -56,18 +56,24 @@ return;
 }
 
 const enLargeImage = (id) => {
+  const div = document.getElementById('myModal');
   const modal = document.getElementById('largeImg');
   const img = document.getElementById(`0${id}`);
   modal.src = img.src;
-  console.log(img);
-  modal.style.display = 'block';
-
+  div.style.display = 'block';
+  div.addEventListener('click', () => { 
+    div.style.display = 'none';
+    thumbDiv.style.display = 'flex';
+  });
 }
+  
 
 
 const addClickFunction = () => {
   for(let child =thumbDiv.firstChild; child!==null; child = child.nextSibling ) {
-    child.addEventListener('click', () => enLargeImage(child.id));
+    child.addEventListener('click', () => {enLargeImage(child.id)
+    thumbDiv.style.display = 'none';
+    });
   }
  
 }
