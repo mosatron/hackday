@@ -13,10 +13,10 @@ app.get('/thumbs/:id', (req, res) => {
   res.sendFile(__dirname + `/db/thumbnails/${id}_tn.jpg`);
 })
  
-// app.get('/:id', (req, res) => {
-//   const id = req.params.id;
-//   res.sendFile(__dirname + `/db/thumbnails/${id}_tn.jpg`);
-// })
+app.get('/:id', (req, res) => {
+  const id = req.params.id;
+  res.sendFile(__dirname + `/db/${id}.jpg`);
+})
 
 app.listen(PORT, ()=> console.log(`server is listening to port ${PORT}`));
 
