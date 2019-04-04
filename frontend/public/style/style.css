@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
-@import './style/layout.css';
+@import './layout.css';
 html{
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 100%;
@@ -14,9 +14,8 @@ body {
   grid-template-rows: 5vh 10vh 85vh;
   margin:0;
   padding: 0;
-
-  
 }
+
 header {
   border-bottom-style: solid;
   border-bottom-color: black;
@@ -27,15 +26,16 @@ header {
   justify-content: space-between;
   flex-flow: wrap;
 }
-
+  
 img {
     size: 10%;
     margin: 5px;
     margin-top:10px;
-  /* max-width: 200px; */
-  
 }
 
 span {
   color: white;
 }
+  
+  
+  

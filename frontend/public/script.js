@@ -67,13 +67,13 @@ const enLargeImage = (id) => {
   });
 }
   
-
-
 const addClickFunction = () => {
   for(let child =thumbDiv.firstChild; child!==null; child = child.nextSibling ) {
     child.addEventListener('click', () => {enLargeImage(child.id)
     thumbDiv.style.display = 'none';
     });
   }
- 
+
 }
+
+ 
